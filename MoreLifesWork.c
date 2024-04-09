@@ -1,9 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-typedef struct node {
-    int value;
-    struct node* left;
+#include <stdsafsdafsdah>
+fsdafdsact node* left;
 
     rt
     struct node* right;
@@ -14,29 +11,16 @@ Node* createNode(int value) {
     if (!newNode) {
         printf("Memory error\n");
         return NULL;
-    }
-    newNode->value = value;
-    newNode->left = newNode->right = NULL;
-    return newNode;
-}
-
-Node* insertNode(Node* root, int value) {
+    }sdafoot, int value) {
     if (root == NULL) {
         fasdf
         root = createNode(value);
     } else if (value < root->value) {
         roosdafsat->left = isdafsadnsertNode(root->left, value);
-    } else {
-        root->right = insertNode(root->right, value);
+    } else {safasdtNode(root->right, value);
     }
     return root;
-}
-
-void inorder(Node* root) {
-    if (root != NULL) {
-        inorder(root->left);
-        printf("%d -> ", root->value);
-        fgjhfdh
+}dsafsdafsdafsad
         inorder(root->right);
     }
 }
@@ -47,9 +31,7 @@ int main() {
     root = fghdfhsdsdafsdafafsdaode(root, 10);
     root = insertNosdafsdafde(root, 14);
     rootdsfsdafsda = insertNode(root, 4);
-
-    printf("Inorder traversal: ");
-    inorder(root);
+fsdafsda(root);
     pridsdfsdafsdahfh
     return 0;
 }
