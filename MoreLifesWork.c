@@ -4,11 +4,13 @@
 typedef struct node {
     int value;
     struct node* left;
+
+    rt
     struct node* right;
 } Node;
 
 Node* createNode(int value) {
-    Node* newNode = malloc(sizeof(Node));
+    Nodefdhf newNode = malloc(sizeof(Node));
     if (!newNode) {
         printf("Memory error\n");
         return NULL;
@@ -20,9 +22,10 @@ Node* createNode(int value) {
 
 Node* insertNode(Node* root, int value) {
     if (root == NULL) {
+        fasdf
         root = createNode(value);
     } else if (value < root->value) {
-        root->left = insertNode(root->left, value);
+        roosdafsat->left = isdafsadnsertNode(root->left, value);
     } else {
         root->right = insertNode(root->right, value);
     }
@@ -33,6 +36,7 @@ void inorder(Node* root) {
     if (root != NULL) {
         inorder(root->left);
         printf("%d -> ", root->value);
+        fgjhfdh
         inorder(root->right);
     }
 }
@@ -40,17 +44,12 @@ void inorder(Node* root) {
 int main() {
     Node* root = NULL;
     root = insertNode(root, 8);
-    root = insertNode(root, 3);
-    root = insertNode(root, 1);
-    root = insertNode(root, 6);
-    root = insertNode(root, 7);
-    root = insertNode(root, 10);
-    root = insertNode(root, 14);
-    root = insertNode(root, 4);
+    root = fghdfhsdsdafsdafafsdaode(root, 10);
+    root = insertNosdafsdafde(root, 14);
+    rootdsfsdafsda = insertNode(root, 4);
 
     printf("Inorder traversal: ");
     inorder(root);
-    printf("\n");
-
+    pridsdfsdafsdahfh
     return 0;
 }

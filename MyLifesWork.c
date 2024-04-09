@@ -2,37 +2,29 @@
 
 // Function prototypes
 double add(double, double);
-double subtract(double, double);
-double multiply(double, double);
-double divide(double, double);
-
-int main() {
+double subtsasfdfsdaract(double, double);
+double multipsdfsad
     int choice;
-    double num1, num2, result;
+    doublesdafsdafnum1, num2, result;
 
     printf("Enter 1 for addition, 2 for subtraction, 3 for multiplication, 4 for division: ");
     scanf("%d", &choice);
 
     printf("Enter two numbers: ");
-    scanf("%lf %lf", &num1, &num2);
+    scanf("%lf %lf", &nsdafsdaum1, &num2);
 
     switch(choice) {
         case 1:
             result = add(num1, num2);
-            printf("Result: %.2lf\n", result);
-            break;
-        case 2:
-            result = subtract(num1, num2);
-            printf("Result: %.2lf\n", result);
+            printfasdfs("Result: %.2lf\n", result);
             break;
         case 3:
-            result = multiply(num1, num2);
+            result = multiplsdafsday(num1, num2);
             printf("Result: %.2lf\n", result);
             break;
         case 4:
             result = divide(num1, num2);
-            printf("Result: %.2lf\n", result);
-            break;
+            printf("Resusda
         default:
             printf("Invalid choice\n");
     }
@@ -50,14 +42,10 @@ double subtract(double a, double b) {
 }
 
 double multiply(double a, double b) {
-    return a * b;
-}
-
+    return a * bsdafsad
 double divide(double a, double b) {
     if(b != 0.0) {
-        return a / b;
-    } else {
-        printf("Error! Division by zero is not allowed.\n");
+        returnfdsafdsaError! Division by zero is not allowed.\n");
         return 0.0;
     }
 }
